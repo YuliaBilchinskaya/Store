@@ -1,0 +1,73 @@
+@media screen and (min-width: 600px) {
+html {
+	overflow: hidden;
+}
+main {
+	height: 657px;
+	width: auto;
+	@include flex-main();
+	justify-content: space-between;
+}
+.project-block {
+	width: 985px;
+	position: relative;
+	.repeat {display: none;}
+	.project-photo {
+	 	height: 100%;
+		background-image: url("C:/Users/pk/Desktop/Adukar/Andersson-wise/img/SCHOOL.jpg");
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;	
+	}
+	.project-menu {
+		position: absolute;
+		width: 400px;
+		height: 550px;
+		@include flex-block();
+		padding: 50px;
+		.nav-menu {
+			width: 130px;
+			height: 130px;
+			background-color: $menu-color;
+    		opacity: 0.95;
+    		padding: 20px;
+    		a {
+    			font: 11px $font-stack;
+    			line-height: 11px;
+    			color: $grey-color;
+    			text-transform: uppercase;
+    			&:hover {
+    				color: $hover-color;
+    				transition: 0.3s;
+    			}
+    		}
+    		.title {
+    			padding-bottom: 10px;
+    		}
+		}
+		.project-location {
+			width: 500px;
+			text-shadow: 1px 1px 3px #000;
+			h2 > a {
+				font: lighter 18px $font-stack;
+				color: $white-color;
+    			text-transform: uppercase;
+    			letter-spacing: 1px;
+			}
+			h3 > a {
+    			color: $white-color;
+    			text-transform: uppercase;
+    			font: bold 10px $font-text;
+    			letter-spacing: 1px;
+			}
+		}
+	}
+}
+}
+
+
+
+
+
+
+

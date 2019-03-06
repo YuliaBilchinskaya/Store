@@ -1,0 +1,10 @@
+@import "core/_fonts";
+@import "icons/_font";
+@import "core/_reset";
+@import "core/_mixins";
+
+@import "blocks/HomePage/_project-block(max-width 600px)";
+@import "blocks/HomePage/_secondary-blocks(max-width 600px)";
+
+@import "blocks/HomePage/_project-block(min-width 600px)";
+@import "blocks/HomePage/_secondary-blocks(min-width 600px)";

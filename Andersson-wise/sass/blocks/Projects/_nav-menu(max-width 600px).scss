@@ -1,0 +1,96 @@
+@media screen and (max-width: 600px) {
+body {
+	background-color: #000;
+	width: 600px;
+}
+.project-menu {
+	width: 600px;
+	height: 110px;
+	padding-top: 20px;
+	.nav-menu {
+		margin: 0 auto;
+		height: 90px;
+		width: 550px;
+		a {
+    			text-transform: uppercase;
+    			font-size: 12px;
+    			display: block;
+    			line-height: 19px;
+    			color: $grey-color;
+    			&:hover {
+    				color: $hover-color;
+    			}
+    		}
+		.headline {
+			height: 45px;
+			background-color: $menu-color;
+			.title {
+				padding: 20px;
+			}
+		}
+	.menu {
+		height: 35px;
+		background-color: $secmenu-color; 
+		text-transform: uppercase;
+	   	li {
+	    	display: inline-block;
+	    	padding-left: 15px;
+	     	a {
+	     		text-decoration: none;
+	     		line-height: 34px;
+    			font-size: 10px;
+    			color: $grey-color;
+	      	&:hover {
+	      		color: $hover-color;
+	      		transition: 0.3s;
+	      	}
+	    	}
+		}
+	}
+	}
+	.category-menu {
+		display: none;
+	}
+}
+.Projects {
+	width: 550px;
+	height: 1000px;
+	@include flex-main();
+	justify-content: space-between;
+	margin: 0 auto;
+	.photo {
+		width: 130px;
+		height: 130px;
+		position: relative;
+		a > img {
+			width: 128px;
+			height: 128px;
+			cursor: pointer;
+		}
+		p {	
+			top: 0;
+    		width: 128px;
+			height: 99px;
+    		position: absolute;	
+    		color: $menu-color;			
+  			text-align: center;
+  			transition: .5s ease;
+			opacity: 0;
+			text-transform: uppercase;
+    		font-size: 10px;
+    		letter-spacing: 2px;
+    		padding-top: 3em;
+			span {
+				color: $menu-color;	
+    			text-transform: uppercase;
+				font: bold 10px $font-text;    		
+    			font-size: 10px;
+		}  	
+	}
+		&:hover p {
+  				opacity: 1;
+  				background: rgba(0, 0, 0, 0.8);
+			}
+}
+}
+}

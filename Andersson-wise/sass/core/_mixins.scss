@@ -1,0 +1,11 @@
+@mixin flex-block() {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+@mixin flex-main() {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}

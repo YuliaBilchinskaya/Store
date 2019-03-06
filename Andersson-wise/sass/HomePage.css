@@ -1,0 +1,308 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "fontello";
+  src: url("icons/files/fontello.eot?80555544");
+  src: url("icons/files/fontello.eot?80555544#iefix") format("embedded-opentype"), url("icons/files/fontello.woff2?80555544") format("woff2"), url("icons/files/fontello.woff?80555544") format("woff"), url("icons/files/fontello.ttf?80555544") format("truetype"), url("icons/files/fontello.svg?80555544#fontello") format("svg");
+}
+[class^=icon-]:before, [class*=" icon-"]:before {
+  font-family: "fontello";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+}
+
+.icon-angle-right:before {
+  content: "";
+  padding: 10px;
+}
+
+.icon-facebook-squared:before {
+  content: "";
+  font-size: 25px;
+}
+
+.icon-twitter-rect:before {
+  content: "";
+  font-size: 30px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+}
+
+@media screen and (max-width: 600px) {
+  .project-block {
+    width: 600px;
+    height: 100%;
+  }
+  .project-block .project-menu {
+    width: 560px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding-top: 20px;
+  }
+  .project-block .project-menu .nav-menu {
+    height: 90px;
+  }
+  .project-block .project-menu .nav-menu .headline {
+    height: 45px;
+    background-color: #fffeff;
+  }
+  .project-block .project-menu .nav-menu .headline .title {
+    padding: 20px;
+  }
+  .project-block .project-menu .nav-menu .menu {
+    height: 35px;
+    background-color: #f4f4f4;
+    text-transform: uppercase;
+  }
+  .project-block .project-menu .nav-menu .menu li {
+    display: inline-block;
+    padding-left: 15px;
+  }
+  .project-block .project-menu .nav-menu .menu li a {
+    line-height: 34px;
+    font-size: 10px;
+    color: #5c5c5c;
+  }
+  .project-block .project-menu .nav-menu .menu li a:hover {
+    color: #54a16d;
+    transition: 0.3s;
+  }
+  .project-block .project-menu .project-location {
+    height: 60px;
+  }
+  .project-block .project-menu .project-location h2 > a {
+    font: lighter 18px "minion-pro-1", "minion-pro-2", "Times New Roman", serif;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  .project-block .project-menu .project-location h3 > a {
+    color: #fff;
+    text-transform: uppercase;
+    font: bold 10px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+    letter-spacing: 1px;
+  }
+  .project-block .project-photo {
+    width: 560px;
+    height: 420px;
+    margin: 0 auto;
+    background-image: url("C:/Users/pk/Desktop/Adukar/Andersson-wise/img/SCHOOL.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  .project-block .repeat {
+    width: 560px;
+    height: 40px;
+    background-color: #fff;
+    margin: 0 auto;
+    line-height: 40px;
+    margin-bottom: 20px;
+  }
+  .project-block .repeat a {
+    font: 11px "minion-pro-1", "minion-pro-2", "Times New Roman", serif;
+    line-height: 11px;
+    color: #5c5c5c;
+    text-transform: uppercase;
+  }
+  .project-block .repeat .icon-angle-right, .project-block .repeat a {
+    display: inline-block;
+  }
+}
+/* sass --watch HomePage.scss HomePage.css */
+@media screen and (max-width: 600px) {
+  html {
+    overflow: scroll;
+  }
+
+  body {
+    background-color: #000;
+    height: 100%;
+    width: 600px;
+  }
+
+  .secondary-blocks {
+    height: 180px;
+    width: 560px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 20px;
+  }
+  .secondary-blocks .mass-media {
+    background-color: #fff;
+    height: 40px;
+    width: 560px;
+    line-height: 40px;
+  }
+  .secondary-blocks .mass-media h4 > a {
+    color: #5c5c5c;
+    font: lighter 11px "minion-pro-1", "minion-pro-2", "Times New Roman", serif;
+    line-height: 11px;
+    color: #555;
+    text-transform: uppercase;
+  }
+  .secondary-blocks .mass-media .icon-angle-right, .secondary-blocks .mass-media h4, .secondary-blocks .mass-media .text-center {
+    display: inline-block;
+  }
+  .secondary-blocks .info-block {
+    background-color: #fff;
+    height: 70px;
+    width: 520px;
+    padding: 20px;
+    font-size: 15px;
+    line-height: 23px;
+  }
+  .secondary-blocks .info-block p {
+    color: #5c5c5c;
+    font-family: "minion-pro-1", "minion-pro-2", "Times New Roman", serif;
+  }
+  .secondary-blocks .info-block .logo {
+    display: none;
+  }
+}
+/* sass --watch HomePage.scss HomePage.css */
+@media screen and (min-width: 600px) {
+  html {
+    overflow: hidden;
+  }
+
+  main {
+    height: 657px;
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .project-block {
+    width: 985px;
+    position: relative;
+  }
+  .project-block .repeat {
+    display: none;
+  }
+  .project-block .project-photo {
+    height: 100%;
+    background-image: url("C:/Users/pk/Desktop/Adukar/Andersson-wise/img/SCHOOL.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  .project-block .project-menu {
+    position: absolute;
+    width: 400px;
+    height: 550px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 50px;
+  }
+  .project-block .project-menu .nav-menu {
+    width: 130px;
+    height: 130px;
+    background-color: #fffeff;
+    opacity: 0.95;
+    padding: 20px;
+  }
+  .project-block .project-menu .nav-menu a {
+    font: 11px "minion-pro-1", "minion-pro-2", "Times New Roman", serif;
+    line-height: 11px;
+    color: #5c5c5c;
+    text-transform: uppercase;
+  }
+  .project-block .project-menu .nav-menu a:hover {
+    color: #54a16d;
+    transition: 0.3s;
+  }
+  .project-block .project-menu .nav-menu .title {
+    padding-bottom: 10px;
+  }
+  .project-block .project-menu .project-location {
+    width: 500px;
+    text-shadow: 1px 1px 3px #000;
+  }
+  .project-block .project-menu .project-location h2 > a {
+    font: lighter 18px "minion-pro-1", "minion-pro-2", "Times New Roman", serif;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  .project-block .project-menu .project-location h3 > a {
+    color: #fff;
+    text-transform: uppercase;
+    font: bold 10px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+    letter-spacing: 1px;
+  }
+}
+@media screen and (min-width: 600px) {
+  .secondary-blocks {
+    width: 370px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .secondary-blocks .mass-media {
+    height: 285px;
+    background-color: #051e00;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 1px;
+    padding: 20px;
+    cursor: pointer;
+  }
+  .secondary-blocks .mass-media:hover {
+    background-color: #000;
+    transition: background-color 0.4s;
+    opacity: 1;
+  }
+  .secondary-blocks .mass-media h4 > a {
+    font-size: 12px;
+    line-height: 40px;
+    text-transform: uppercase;
+    font-weight: lighter;
+    color: #cdcdcd;
+    font-family: "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+  }
+  .secondary-blocks .mass-media h4 > a .text-center {
+    display: block;
+    font-size: 24px;
+    line-height: 28px;
+    font-family: minion-pro-1, minion-pro-2, "Times New Roman", Times;
+    text-transform: uppercase;
+    font-weight: lighter;
+  }
+  .secondary-blocks .info-block {
+    height: 260px;
+    background-color: #0c0c0c;
+    padding: 30px;
+  }
+  .secondary-blocks .info-block .text {
+    width: 260px;
+    margin: 0 auto;
+  }
+  .secondary-blocks .info-block .text p {
+    color: #cdcdcd;
+    font-size: 14px;
+    line-height: 23px;
+  }
+  .secondary-blocks .info-block .text .logo {
+    padding-bottom: 10px;
+  }
+
+  .icon-angle-right {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=HomePage.css.map */

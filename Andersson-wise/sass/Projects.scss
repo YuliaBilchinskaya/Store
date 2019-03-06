@@ -1,0 +1,8 @@
+@import "core/_fonts";
+@import "icons/_font";
+@import "core/_reset";
+@import "core/_mixins";
+
+
+@import "blocks/Projects/_nav-menu(max-width 600px)";
+@import "blocks/Projects/_nav-menu(min-width 600px)";

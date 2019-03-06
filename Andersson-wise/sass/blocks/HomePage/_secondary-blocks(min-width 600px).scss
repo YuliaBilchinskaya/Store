@@ -1,0 +1,55 @@
+@media screen and (min-width: 600px) { 
+.secondary-blocks {
+	width: 370px;
+	@include flex-block();
+	.mass-media {
+		  height: 285px;
+		  background-color: #051e00;
+		  display: flex;
+  		align-items: center;
+  		text-align: center;
+  		letter-spacing: 1px;
+  		padding: 20px;
+  		cursor: pointer;
+  		&:hover {
+  			background-color: #000;
+  			transition: background-color 0.4s;
+  			opacity: 1;
+  		}
+		  h4 > a {
+			 font-size: 12px;
+    	 line-height: 40px;
+    	 text-transform: uppercase;
+    	 font-weight: lighter;
+    	 color: $second-block;
+    	 font-family: $font-text;   		
+    		.text-center {
+          display: block;
+    			font-size: 24px;
+    			line-height: 28px;
+    			font-family: $font-plain;
+    			text-transform: uppercase;
+    			font-weight: lighter;	
+    		}
+		}
+	}
+.info-block {
+	height: 260px;
+	background-color: #0c0c0c;
+	padding: 30px;
+	.text {
+		width: 260px;
+		margin: 0 auto;
+		p {
+			color: $second-block;
+			font-size: 14px;
+    	line-height: 23px;  
+		}
+   		.logo {
+   			padding-bottom: 10px;
+   		}
+   	}
+}
+}
+.icon-angle-right {display: none;}
+}
