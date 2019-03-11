@@ -136,10 +136,10 @@ body {
     			background-color: #777;
     			text-align: center;
     			width: 25px;
+    			margin: 5px;
     			font-size: 13px;
     			line-height: 25px;
     			font-family: $font-Verdana;
-    			cursor: pointer;
     			&:hover {
     				 background-color: #555;
     				transition: 0.3s;

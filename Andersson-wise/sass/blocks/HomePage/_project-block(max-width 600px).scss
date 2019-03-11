@@ -4,7 +4,6 @@ body {
 	max-width: 600px;
 	height: auto;
 	padding: 20px;
-
 }
 .project-block {
 	width: 100%;
@@ -21,14 +20,13 @@ body {
 				}
 			}
 			.menu {
-				height: 35px;
 				background-color: $secmenu-color; 
 				text-transform: uppercase;
 	   			li {
 	    			display: inline-block;
 	    			padding-left: 15px;
 	     			a {
-	     				line-height: 34px;
+	     				line-height: 35px;
     					font-size: 10px;
     					color: $grey-color;
 	      			&:hover {
@@ -41,6 +39,7 @@ body {
 		}
 	.project-location {
 		height: auto;
+		padding-bottom: 20px;
 		h2 > a {
 			font: lighter 18px $font-stack;
 			color: $white-color;
@@ -67,9 +66,8 @@ body {
 	.repeat {
 		height: auto;
 		background-color: $white-color;
-    	margin: 0 auto;
-    	line-height: 40px;
     	margin-bottom: 20px;
+    	padding: 10px;
     	a {	
     		font: 11px $font-stack;
     		line-height: 11px;

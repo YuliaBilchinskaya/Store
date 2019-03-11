@@ -61,7 +61,6 @@
     padding: 20px;
   }
   .project-block .project-menu .nav-menu .menu {
-    height: 35px;
     background-color: #f4f4f4;
     text-transform: uppercase;
   }
@@ -70,7 +69,7 @@
     padding-left: 15px;
   }
   .project-block .project-menu .nav-menu .menu li a {
-    line-height: 34px;
+    line-height: 35px;
     font-size: 10px;
     color: #5c5c5c;
   }
@@ -80,6 +79,7 @@
   }
   .project-block .project-menu .project-location {
     height: auto;
+    padding-bottom: 20px;
   }
   .project-block .project-menu .project-location h2 > a {
     font: lighter 18px "minion-pro-1", "minion-pro-2", "Times New Roman", serif;
@@ -105,9 +105,8 @@
   .project-block .repeat {
     height: auto;
     background-color: #fff;
-    margin: 0 auto;
-    line-height: 40px;
     margin-bottom: 20px;
+    padding: 10px;
   }
   .project-block .repeat a {
     font: 11px "minion-pro-1", "minion-pro-2", "Times New Roman", serif;
@@ -121,34 +120,28 @@
 }
 @media screen and (max-width: 600px) {
   .secondary-blocks {
-    height: 180px;
     width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
     padding-bottom: 20px;
   }
   .secondary-blocks .mass-media {
     background-color: #fff;
-    line-height: 40px;
-    height: auto;
+    margin-bottom: 20px;
+    padding: 10px;
   }
   .secondary-blocks .mass-media h4 > a {
     color: #5c5c5c;
     font: lighter 11px "minion-pro-1", "minion-pro-2", "Times New Roman", serif;
-    line-height: 11px;
     color: #555;
     text-transform: uppercase;
   }
-  .secondary-blocks .mass-media .icon-angle-right, .secondary-blocks .mass-media h4, .secondary-blocks .mass-media .text-center {
-    display: inline-block;
+  .secondary-blocks .mass-media .icon-angle-right, .secondary-blocks .mass-media h4 {
+    display: inline;
   }
   .secondary-blocks .info-block {
     background-color: #fff;
     padding: 20px;
     font-size: 15px;
     line-height: 23px;
-    height: auto;
   }
   .secondary-blocks .info-block p {
     color: #5c5c5c;

@@ -1,22 +1,19 @@
 @media screen and (max-width: 600px) {
 .secondary-blocks {
-	height: 180px;
 	width: 100%;
-	@include flex-block();
 	padding-bottom: 20px;
 	.mass-media {
 		background-color: $white-color;
-		line-height: 40px;
-		height: auto;
+		margin-bottom: 20px;
+		padding: 10px;
 		h4 > a {
 			color: $grey-color;
     		font: lighter 11px $font-stack;
-    		line-height: 11px;
     		color: #555;
     		text-transform: uppercase;
 		}
-		.icon-angle-right, h4, .text-center {
-			display: inline-block;
+		.icon-angle-right, h4 {
+			display: inline;
 		}
 	}
 	.info-block {
@@ -24,7 +21,6 @@
 		padding: 20px;
 		font-size: 15px;
     	line-height: 23px;
-    	height: auto;
 		p {
 			color: $grey-color;
 			font-family: $font-stack;
