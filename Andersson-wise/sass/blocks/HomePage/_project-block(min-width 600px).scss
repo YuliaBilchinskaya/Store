@@ -3,15 +3,16 @@ html {
 	overflow: hidden;
 }
 main {
-	height: 657px;
+	display: flex;
+	flex-direction: row;
+	height: 658px;
 	width: auto;
-	@include flex-main();
-	justify-content: space-between;
 }
 .project-block {
-	width: 985px;
+	padding-right: 10px;
+	flex: 1;
 	position: relative;
-	.repeat {display: none;}
+	.repeat {display: none;}	
 	.project-photo {
 	 	height: 100%;
 		background-image: url("C:/Users/pk/Desktop/FinalWork/Final-Work-CSS-HTML-/Andersson-wise/img/SCHOOL.jpg");
@@ -60,7 +61,27 @@ main {
     			font: bold 10px $font-text;
     			letter-spacing: 1px;
 			}
+
 		}
+	}
+}
+}
+
+@media (min-width: 600px) and (max-width: 895px) {
+html {
+	overflow-y: scroll;
+}	
+main {
+	flex-direction: column;
+	height: auto;
+	max-width: 895px;
+}
+.project-block {
+	height: 500px;
+	width: 100%;
+	padding: 0;
+	.project-menu {
+		height: 400px;
 	}
 }
 }

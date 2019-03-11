@@ -1,12 +1,16 @@
 @media screen and (max-width: 600px) {
+body {
+	background-color: #000;
+	max-width: 600px;
+	height: auto;
+	padding: 20px;
+
+}
 .project-block {
-	width: 600px;
-	height: 100%;
+	width: 100%;
 	.project-menu {
-		width: 560px;
 		@include flex-block();
 		margin: 0 auto;
-		padding-top: 20px;
 		.nav-menu {
 			height: 90px;
 			.headline {
@@ -36,7 +40,7 @@
 			}
 		}
 	.project-location {
-		height: 60px;
+		height: auto;
 		h2 > a {
 			font: lighter 18px $font-stack;
 			color: $white-color;
@@ -52,7 +56,7 @@
 }
 	}
 	.project-photo {
-		width: 560px;
+		width: 100%;
 		height: 420px;
 		margin: 0 auto;
 		background-image: url("C:/Users/pk/Desktop/FinalWork/Final-Work-CSS-HTML-/Andersson-wise/img/SCHOOL.jpg");
@@ -61,8 +65,7 @@
 		background-size: cover;
 	}
 	.repeat {
-		width: 560px;
-		height: 40px;
+		height: auto;
 		background-color: $white-color;
     	margin: 0 auto;
     	line-height: 40px;
@@ -79,4 +82,3 @@
     }
 	}
 }
-

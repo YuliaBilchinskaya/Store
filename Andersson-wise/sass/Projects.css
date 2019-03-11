@@ -33,32 +33,22 @@
   list-style: none;
 }
 
-/* sass --watch Projects.scss Projects.css */
 @media screen and (max-width: 600px) {
   body {
     background-color: #000;
-    width: 600px;
+    max-width: 600px;
+    height: auto;
+    padding: 20px;
   }
 
   .project-menu {
-    width: 600px;
-    height: 110px;
-    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0 auto;
   }
   .project-menu .nav-menu {
-    margin: 0 auto;
     height: 90px;
-    width: 550px;
-  }
-  .project-menu .nav-menu a {
-    text-transform: uppercase;
-    font-size: 12px;
-    display: block;
-    line-height: 19px;
-    color: #5c5c5c;
-  }
-  .project-menu .nav-menu a:hover {
-    color: #54a16d;
   }
   .project-menu .nav-menu .headline {
     height: 45px;
@@ -77,7 +67,6 @@
     padding-left: 15px;
   }
   .project-menu .nav-menu .menu li a {
-    text-decoration: none;
     line-height: 34px;
     font-size: 10px;
     color: #5c5c5c;
@@ -86,54 +75,75 @@
     color: #54a16d;
     transition: 0.3s;
   }
-  .project-menu .category-menu {
-    display: none;
+  .project-menu .menu {
+    height: 35px;
+    background-color: #f4f4f4;
+    text-transform: uppercase;
+  }
+  .project-menu .menu li {
+    display: inline-block;
+    padding-left: 15px;
+  }
+  .project-menu .menu li a {
+    text-decoration: none;
+    line-height: 34px;
+    font-size: 10px;
+    color: #5c5c5c;
+  }
+  .project-menu .menu li a:hover {
+    color: #54a16d;
+    transition: 0.3s;
   }
 
-  .Projects {
-    width: 550px;
-    height: 1000px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin: 0 auto;
-  }
-  .Projects .photo {
-    width: 130px;
-    height: 130px;
-    position: relative;
-  }
-  .Projects .photo a > img {
-    width: 128px;
-    height: 128px;
-    cursor: pointer;
-  }
-  .Projects .photo p {
-    top: 0;
-    width: 128px;
-    height: 99px;
-    position: absolute;
-    color: #fffeff;
-    text-align: center;
-    transition: 0.5s ease;
-    opacity: 0;
-    text-transform: uppercase;
-    font-size: 10px;
-    letter-spacing: 2px;
-    padding-top: 3em;
-  }
-  .Projects .photo p span {
-    color: #fffeff;
-    text-transform: uppercase;
-    font: bold 10px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
-    font-size: 10px;
-  }
-  .Projects .photo:hover p {
-    opacity: 1;
-    background: rgba(0, 0, 0, 0.8);
+  .category-menu {
+    display: none;
   }
 }
+.Projects {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 0 auto;
+}
+.Projects .photo {
+  width: 130px;
+  height: 130px;
+  position: relative;
+  padding-top: 20px;
+}
+.Projects .photo a > img {
+  width: 128px;
+  height: 128px;
+  cursor: pointer;
+}
+.Projects .photo p {
+  top: 0;
+  width: 100%;
+  height: 90px;
+  position: absolute;
+  color: #fffeff;
+  text-align: center;
+  transition: 0.5s ease;
+  opacity: 0;
+  text-transform: uppercase;
+  font-size: 10px;
+  letter-spacing: 2px;
+  padding-top: 60px;
+}
+.Projects .photo p span {
+  color: #fffeff;
+  text-transform: uppercase;
+  font: bold 10px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+  font-size: 10px;
+}
+.Projects .photo:hover p {
+  opacity: 1;
+  background: rgba(0, 0, 0, 0.8);
+}
+
 @media screen and (min-width: 600px) {
   body {
     background-color: #000;
@@ -192,6 +202,13 @@
   .project-menu .category-menu a:hover {
     color: #54a16d;
   }
+  .project-menu .category-menu i {
+    display: none;
+  }
+  .project-menu .category-menu li:active .icon-angle-right {
+    display: inline-block;
+    color: #54a16d;
+  }
 
   .Projects {
     width: 100%;
@@ -204,6 +221,7 @@
     width: 200px;
     height: 200px;
     position: relative;
+    padding: 0;
   }
   .Projects .photo a > img {
     width: 180px;
@@ -212,7 +230,7 @@
   .Projects .photo p {
     top: 0;
     width: 180px;
-    height: 127px;
+    height: 120px;
     position: absolute;
     color: #fffeff;
     text-align: center;
@@ -221,7 +239,6 @@
     text-transform: uppercase;
     font-size: 18px;
     letter-spacing: 2px;
-    padding-top: 3em;
   }
   .Projects .photo p span {
     color: #fffeff;

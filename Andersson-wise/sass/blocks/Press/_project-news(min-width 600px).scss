@@ -1,16 +1,11 @@
 @media screen and (min-width: 600px) {
-* {
-		margin: 0;
-		padding: 0;
-	}
 .news-holder {
 	width: 900px;
-	height: 100%;
+	height: auto;
 	@include flex-main();
 	background-color: $white-color;
     color: $grey-color;
     padding: 50px;
-    margin: 0 auto;
     h2 {
         font-size: 26px;    
         border-bottom: 5px solid #444;
@@ -22,14 +17,22 @@
     .news-item {
     	width: 100%;
     	height: auto;
-        margin: 0 auto;
         padding: 30px;
         display: flex;
         flex-direction: column;
         justify-content: space-around;
         border-bottom: 5px solid #444;
+        .head-block {
+            display: flex;
+            flex-direction: row;
+            .date-block {
+            display: flex;
+            flex-direction: column;
+            }
+        }
     	.date-news {
     		height: 75px;
+            padding-right: 15px;
     		.date {
 				border-radius: 50%;
 				border: 1px solid #888;

@@ -1,22 +1,16 @@
 @media screen and (min-width: 600px) {
-* {
-	margin: 0;
-	padding: 0;
-	text-decoration: none;
-	list-style: none;
-}
 body {
 	background-color: #dedede;
 	width: 100%;
 	height: auto;
-	padding-top: 50px;
+	padding: 50px;
 	display: flex;
 	flex-direction: row;
 }
 .project-menu {
 	width: 170px;
 	height: 300px;
-	padding-left: 50px;
+	padding-right: 50px;
 	@include flex-block();
 	.nav-menu {
 		width: 130px;
@@ -55,9 +49,14 @@ body {
    			&:hover {
   				color: $hover-color;
 			}
+   		}		
+   		i {display: none;}
+   		li:active .icon-angle-right {
+   			display: inline-block;
+   			color: $hover-color;
    		}
-	}
-}
-}
+   		}
+   	}
+   }
 
 

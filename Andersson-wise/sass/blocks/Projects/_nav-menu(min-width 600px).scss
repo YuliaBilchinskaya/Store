@@ -50,9 +50,14 @@ body {
    			&:hover {
   				color: $hover-color;
 			}
+   		}		
+   		i {display: none;}
+   		li:active .icon-angle-right {
+   			display: inline-block;
+   			color: $hover-color;
    		}
-	}
-}
+   		}
+   	}
 .Projects {
 	width: 100%;
 	@include flex-main();
@@ -61,6 +66,7 @@ body {
 		width: 200px;
 		height: 200px;
 		position: relative;
+		padding: 0;
 		a > img {
 			width: 180px;
 			height: 180px;
@@ -68,7 +74,7 @@ body {
 			p {
 				top: 0;
     			width: 180px;
-				height: 127px;
+				height: 120px;
     			position: absolute;	
     			color: $menu-color;			
   				text-align: center;
@@ -77,7 +83,6 @@ body {
 				text-transform: uppercase;
     			font-size: 18px;
     			letter-spacing: 2px;
-    			padding-top: 3em;
 				span {
 					color: $menu-color;	
     				text-transform: uppercase;

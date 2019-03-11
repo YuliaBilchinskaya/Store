@@ -1,31 +1,39 @@
 @media screen and (max-width: 600px) {
 body {
 	background-color: #000;
-	width: 600px;
+	max-width: 600px;
+	height: auto;
+	padding: 20px;
 }
 .project-menu {
-	width: 600px;
-	height: 110px;
-	padding-top: 20px;
-	.nav-menu {
+		@include flex-block();
 		margin: 0 auto;
-		height: 90px;
-		width: 550px;
-		a {
-    			text-transform: uppercase;
-    			font-size: 12px;
-    			display: block;
-    			line-height: 19px;
-    			color: $grey-color;
-    			&:hover {
-    				color: $hover-color;
-    			}
-    		}
-		.headline {
-			height: 45px;
-			background-color: $menu-color;
-			.title {
-				padding: 20px;
+		.nav-menu {
+			height: 90px;
+			.headline {
+				height: 45px;
+				background-color: $menu-color;
+				.title {
+					padding: 20px;
+				}
+			}
+			.menu {
+				height: 35px;
+				background-color: $secmenu-color; 
+				text-transform: uppercase;
+	   			li {
+	    			display: inline-block;
+	    			padding-left: 15px;
+	     			a {
+	     				line-height: 34px;
+    					font-size: 10px;
+    					color: $grey-color;
+	      			&:hover {
+	      				color: $hover-color;
+	      				transition: 0.3s;
+	      			}
+	    			}
+				}
 			}
 		}
 	.menu {
@@ -53,15 +61,16 @@ body {
 	}
 }
 .Projects {
-	width: 550px;
-	height: 1000px;
+	width: 100%;
+	height: auto;
 	@include flex-main();
-	justify-content: space-between;
+	justify-content: space-around;
 	margin: 0 auto;
 	.photo {
 		width: 130px;
 		height: 130px;
 		position: relative;
+		padding-top: 20px;
 		a > img {
 			width: 128px;
 			height: 128px;
@@ -69,8 +78,8 @@ body {
 		}
 		p {	
 			top: 0;
-    		width: 128px;
-			height: 99px;
+    		width: 100%;
+			height: 90px;
     		position: absolute;	
     		color: $menu-color;			
   			text-align: center;
@@ -79,7 +88,7 @@ body {
 			text-transform: uppercase;
     		font-size: 10px;
     		letter-spacing: 2px;
-    		padding-top: 3em;
+    		padding-top: 60px;
 			span {
 				color: $menu-color;	
     			text-transform: uppercase;
@@ -93,4 +102,4 @@ body {
 			}
 }
 }
-}
+
