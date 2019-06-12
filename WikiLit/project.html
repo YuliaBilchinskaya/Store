@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" type="text/css" href="sass/style.css">
+    <title>WikiLit</title>
+</head>
+<body>
+    <header>
+        <nav class="header-page__nav-top">
+            <div class="header-page__nav-menu">
+                <h1><a href="#">Wiki<span>Lit</span></a></h1> <!--logo-->
+                <ul class="header-page__nav-menuItem"> <!--верхнее меню-->
+                    <li><a href="#">Рецензии</a></li>
+                    <li><a href="#">Лекции</a></li>
+                    <li><a href="#">События</a></li>
+                    <li><a href="#">О нас</a></li>
+                    <li><a href="#">Контакты</a></li>
+                </ul>
+                <form method="post" class="search-form" name="search-form"> <!--форма поиска-->
+                    <label><input class="search" type="text" name="search" placeholder="Поиск"></label>
+                </form>
+            </div>
+            <div class="header-page__nav-innerBox"> <!--блок для темы сайта-->
+                <div class="header-page__nav-mainTopic"> <!--тема сайта-->
+                    <div class="line"> <!--для красоты-->
+                        <h2>Классика мировой литературы</h2>
+                    </div>
+                    <p class="text">Список величайших писателей 17-20 века</p>
+                </div>
+                <ul class="icons"> <!--иконки соц.сетей-->
+                    <a href="#"><li class="icon-facebook"></li></a>
+                    <a href="#"><li class="icon-twitter-bird"></li></a>
+                    <a href="#"><li class="icon-vkontakte-rect"></li></a>
+                    <a href="#"><li class="icon-gplus"></li></a>
+                </ul>
+            </div>
+        </nav>
+        <div id="backgroundPhoto"><img></div> <!--фон-->
+    </header>
+    <main>
+        <form method="post" name="select-form" id="authorsForm">
+            <p>
+                <label class="label">Сортировка по странам:</label>
+                <select id="countries">
+                    <option>-</option>
+                    <option value="gb">Английская литература</option>
+                    <option value="us">Американская литература</option>
+                    <option value="ru">Русская литература</option>
+                    <option value="de">Немецкая литература‎</option>
+                    <option value="fr">Французская литература‎</option>
+                </select>
+            </p>
+            <p>
+                <label class="label">Век:</label>
+                <select id="century">
+                    <option>-</option>
+                    <option>17</option>
+                    <option>18</option>
+                    <option>19</option>
+                    <option>20</option>
+                </select>
+            </p>
+        </form>
+        <!--блок с авторами-->
+        <div id="content"></div>
+        <!--модальное окно-->
+        <div class="modal" id="modal">
+            <div class="modal-content" id="modal-content">
+                <div class="modalHead">
+                    <h5>Биография</h5>
+                <div class="blockForBut">
+                    <button type="button" id="close-button"><span>&times;</span></button>
+                    <button type="button" id="editButton">&#9998;</button>
+                </div>
+                </div>
+                <div id="modalBiography">
+                    <div class="mainPhoto"><img src="" class="photo"></div>
+                    <p class="textBiography"></p>
+                    <div class="worksAut">
+                        <p class="textReleaseYears">
+
+                        </p>
+                        <p class="textGenre">
+
+                        </p>
+                        <p class="textTitle">
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal-overlay" id="modal-overlay"></div>
+        <!--модальное окно с формой-->
+        <div class="modalForm" id="modalForm">
+            <div class="modalFormContent">
+                <div class="modal-header">
+                    <h5 class="modal-title">Добавить автора</h5>
+                    <button type="button" id="closeModalForm"><span aria-hidden="true">&times;</span></button>
+                </div>
+                <div class="modal-body">
+                    <form name="addNewAuthor" id="addNewAuthor" method="post">
+                        <div class="form-group">
+                            <label for="recipient-name" class="form-label">ФИО:</label>
+                            <input type="text" id="recipient-name" value placeholder="Введите ФИО автора" name="createAut">
+                        </div>
+                        <div class="form-group">
+                            <label for="recipient-years" class="form-label">Годы жизни:</label>
+                            <input type="text" id="recipient-years" value placeholder="Введите годы жизни автора" name="createAut2">
+                        </div>
+                        <div class="form-group">
+                            <label for="recipient-photo" class="form-label">Загрузить фото:</label>
+                            <input type="url" id="recipient-photo" value placeholder="Загрузить фото автора" name="createAut3" required>
+                        </div>
+                        <div class="form-group">
+						<label for="recipient-century" class="form-label">Век:</label>			                
+						<select id="recipient-century">
+			                    <option>-</option>
+			                    <option>17</option>
+			                    <option>18</option>
+			                    <option>19</option>
+			                    <option>20</option>
+			                </select>
+			            </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <input type="button" formnovalidate  name="cancel" id="btn-secondary" data-dismiss="modal" value="Отмена">
+                    <input type="submit" name="Save" id="btn-primary" value="Сохранить">
+                </div>
+            </div>
+        </div>
+        <div class="modal-background" id="modal-background"></div>
+        <a id="toTop"></a>
+    </main><!--/dist-->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+ 	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.0/dist/jquery.validate.js"></script>
+    <script src="test/autorstTest.js"></script>
+    <script src="test/mainContent.js"></script>
+    <script src="test/modalWindow.js"></script>
+    <script src="test/addAuthor.js"></script>
+    <script src="test/filter.js"></script>
+    <script src="test/modalForm.js"></script>
+    <script src="test/DeleteEdit.js"></script>
+	<!--<script type="text/javascript"> $(document).ready(function(){ alert(jQuery.fn.jquery); }); </script>-->
+</body>
+</html>

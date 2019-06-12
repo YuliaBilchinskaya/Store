@@ -1,0 +1,85 @@
+.header-page__nav-top {
+    padding: 1em 2em;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    z-index: 3;
+    .header-page__nav-menu {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        height: 40px;
+        .header-page__nav-menuItem {
+            align-items: center;
+            border-left: 1px solid rgba(255,255,255,0.7);
+            border-right: 1px solid rgba(255,255,255,0.7);
+            padding: 15px;
+            margin: 0 3em;
+            li {
+                display: inline-block;
+                margin: 0 12px;
+                a {
+                color: #fff;
+                font-size: 16px;
+                letter-spacing: 3px;
+                }
+            }
+        }
+        .search-form {
+            line-height: 40px;
+            z-index: 3;
+            .search {
+                border: 0;
+                width: 340px;
+                height: 30px;
+                border-radius: 15px;
+                background: rgba(253, 250, 243, 0.50);
+                box-shadow: 0 6px 4px -3px rgba(0, 0, 0, .3);
+                padding-left: 20px;
+        }
+        }
+    }
+    .header-page__nav-innerBox {
+        display: flex;
+        flex-direction: column;
+        padding: 5em 0 0 10em;
+        z-index: 3;
+        .header-page__nav-mainTopic {
+            background: rgba(253, 250, 243, 0.25);
+            box-shadow: 0 6px 4px -3px rgba(0, 0, 0, .3);
+            color: #fff;
+            padding: 2em;
+            width: 280px;
+            text-align: center;
+            .line {
+                border-bottom: solid 2px;
+                border-top: solid 2px;
+                margin-bottom: 1em;
+                padding: 3px;
+            }
+            .text {
+                line-height: 1.50em;
+                font-size: 15px;
+                letter-spacing: 3px;
+                text-transform: uppercase;
+            }
+        }   
+    }
+}
+#backgroundPhoto:after {
+    width: 100%;
+    height: 500px;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 2;
+    background: 
+    linear-gradient(rgba(30, 33, 36, 0.6), rgba(223, 223, 223, 0.4));
+}
+img {
+    width: 100%;
+    height: 500px;
+}

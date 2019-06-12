@@ -1,0 +1,75 @@
+#content {
+	border-bottom: solid 1px rgba(160, 160, 160, 0.3);
+	height: auto;
+	background-color: #fff;
+	padding: 25px;
+	.main-block > .authors-block {
+		display: inline-block;
+	}
+	.mainTitle {
+		display: flex;
+		justify-content: space-between;
+		height: 45px;
+		.authors-block {
+			display: flex;
+			flex-direction: row;
+			width: 10px;
+		}
+		.addAuthor {
+		  margin-bottom: 10px;
+		  border: 0;
+		  background: #fff;
+		  color: #615f5f;
+		  font-size: 13px;
+		  font-weight: 700;
+		  letter-spacing: 1px;
+		  cursor: pointer;
+		}
+	}
+	h3 {
+		padding: 15px 0;
+       	font-size: 18px;
+        letter-spacing: 2px;
+	}
+	.createBlock {
+		display: flex;
+		align-items: center;
+		padding-top: 10px;
+		margin-right: 10px;
+		position: relative;
+		.del {
+			background-color: #fff;
+			border: 0;
+			position: absolute;
+			top: 10px;
+			left: 90px;
+			cursor: pointer;
+		}
+		.photo-block {
+	        cursor: pointer;
+	        width: 100px;
+	        height: 100px;
+	        border: 1px solid #5e5e5e;
+	  		border-radius: 50%;
+  			.img-aut {
+	  			width: 90px;
+	        	height: 90px;
+	        	margin: 5px;
+	        	border-radius: 50%;
+  			}
+		}
+		.information-block {
+			width: auto;
+			height: 50px;
+			margin: 20px;
+		.autorSection {
+			color: #615f5f;
+    		font-size: 12px;
+    		font-weight: 700;
+    		letter-spacing: 1px;
+    		cursor: pointer;
+    	}
+		}
+	}
+
+}

@@ -1,0 +1,91 @@
+#modal-background {
+    position: fixed;
+    display: none;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+}
+#modalForm {
+  display: none;
+  width: 600px;
+  max-width: 100%;
+  height: auto;
+  max-height: 100%;
+  position: fixed;
+  z-index: 100; 
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%); 
+  background: white;
+  box-shadow: 0 0 60px 10px rgba(0, 0, 0, 0.9);
+  padding: 15px;
+  .modalFormContent {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: #fff;
+  #closeModalForm {
+    border: 0;
+    background: #999995;
+    font-size: 25px;
+    padding: 2px 7px;
+    border-radius: 6px;
+    color: #fff;
+    font-weight: 400;
+    cursor: pointer;
+  }
+  .modal-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;   
+    border-bottom: solid 1px rgba(154, 154, 154, 1);
+    .modal-title {
+      font-size: 25px;
+      letter-spacing: 2px;
+    }
+  }
+  .modal-body {
+    padding: 15px;
+    border-bottom: solid 1px rgba(154, 154, 154, 1);
+  .form-group {
+    margin-bottom: 10px;
+    .form-label {
+      margin-bottom: 0;
+      color: #615f5f;
+      font-size: 15px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      line-height: 2;
+    }
+    #recipient-name, #recipient-years, #recipient-photo  {
+      width: 95%;
+      height: 25px;
+      padding: 5px;
+      font-size: 20px;
+      color: #495057;
+      border: 1px solid #ced4da;
+      border-radius: 6px;
+    }
+  }
+  }
+  .modal-footer {
+    padding: 15px;
+    display: flex;
+    justify-content: flex-end;
+  }
+  .modal-footer > input {
+    margin: 10px;
+    padding: 10px;
+    background: #999995;
+    border: 0;
+    border-radius: 6px;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 400;
+    cursor: pointer;
+  }
+
+}
+}
