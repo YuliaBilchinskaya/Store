@@ -3,6 +3,3 @@
 
 ## Резюме
 [Резюме](https://YuliaBilchinskaya.github.io/Резюме/ResumeBilchinskaya.html)
-
-## Store 
-[Online Store](https://YuliaBilchinskaya.github.io/Store/index.html)
