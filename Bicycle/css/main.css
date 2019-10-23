@@ -440,7 +440,7 @@ hr {
     justify-content: center;
   }
   .main__mailing .email-form .email-form__input {
-    width: 400px;
+    width: 300px;
     height: 69px;
     border: 1px solid #d3d7d9;
     background-color: #ffffff;
@@ -455,7 +455,6 @@ hr {
     background-color: #64c29e;
     border: #64c29e;
     color: white;
-    margin-left: 300px;
     font-size: 24px;
     font-weight: 300;
   }
