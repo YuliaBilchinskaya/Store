@@ -200,7 +200,13 @@
 }
 
 
-@media only screen and (min-width : 374px) and (max-width : 600px) {
+@media only screen and (min-width : 350px) and (max-width : 600px) {
+    header {
+        height: auto;
+    }
+    .delivery {
+        padding-bottom: 20px;
+    }
     .start_block button {
         width: 100%;
         height: auto;
