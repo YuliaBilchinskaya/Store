@@ -211,6 +211,9 @@
         width: 100%;
         height: auto;
      }
+   .routes_block div:nth-child(-n+2) {
+    margin-right: 0;
+    }
      .title_routes {
         text-align: center;
      }
