@@ -18,6 +18,3 @@
 
 ## 2
 [Bicycle](https://YuliaBilchinskaya.github.io/Bicycle/index.html)
-
-## test
-[tz](https://YuliaBilchinskaya.github.io/test/index.html)
