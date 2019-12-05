@@ -1,5 +1,4 @@
 ## Итоговая работа по вёрстке
-[Andersson-wise](https://YuliaBilchinskaya.github.io/Andersson-wise/HomePage.html)
 - SCSS 
 - Flexbox
 
@@ -12,9 +11,3 @@
 - ECMAScript 2015 (ES6)
 - Fetch 
 - JSON
-
-## Резюме
-[Резюме](https://YuliaBilchinskaya.github.io/Резюме/ResumeBilchinskaya.html)
-
-## 2
-[Bicycle](https://YuliaBilchinskaya.github.io/Bicycle/index.html)
